@@ -2,7 +2,7 @@
 
 ## Operation System
 
-![image-20220415003440460](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415003440460.png)
+![image-20220415003440460](./image/image-20220415003440460.png)
 
 功能: 
 
@@ -17,7 +17,7 @@
 
 多工:  同時執行多個程式的能力
 
-![image-20220414235953098](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220414235953098.png)
+![image-20220414235953098](./image/image-20220414235953098.png)
 
 (A) 像是 arduino
 
@@ -25,7 +25,7 @@
 
 行程模式: CPU 和 輸出入
 
-![image-20220415000557829](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415000557829.png)
+![image-20220415000557829](./image/image-20220415000557829.png)
 
 因為這樣的設計 當在輸出入時 不會搶著CPU 他可以去做其他事
 
@@ -37,7 +37,7 @@
 
 行程就是執行中的程式
 
-![image-20220415001612988](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415001612988.png)
+![image-20220415001612988](./image/image-20220415001612988.png)
 
 就緒狀態的時候不見得 就以得到CPU馬上執行 可能要等待其他行程執行 等待排程器來分派 如果他執行太九執行中斷器發生 那麼他又會回到就緒的狀態 等待下去被分派到CPU
 
@@ -133,7 +133,7 @@ int main(){
 
 行程是個單獨的程式
 
-![image-20220415010554740](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415010554740.png)
+![image-20220415010554740](./image/image-20220415010554740.png)
 
 放三個 forever在背景執行 互相獨立
 
@@ -271,13 +271,13 @@ MMU:
 
   問題: 他只有基底沒有被存取的區塊範圍 所以在多工作業系統的情況下 多個程式在執行的時候 他只要存取超過範圍的時候可能存取到別人的資料 就會有安全性的顧慮 
 
-  ![image-20220415130159132](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415130159132.png)
+  ![image-20220415130159132](./image/image-20220415130159132.png)
 
-* 基底界限暫存器  有基底還有界限 不會存取到別人資料![image-20220415130810115](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415130810115.png)
-* 分段表    很多個基底和界限暫存器 每個都有自己的基底和界限暫存器 ,  一個程式就有好幾組基底和界限暫存器 ex: 程式段 資料段 堆疊段...  設定說不可以修改程式段的東西 可以用分段的機制限制這樣的事情![image-20220415131220634](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415131220634.png)
+* 基底界限暫存器  有基底還有界限 不會存取到別人資料![image-20220415130810115](./image/image-20220415130810115.png)
+* 分段表    很多個基底和界限暫存器 每個都有自己的基底和界限暫存器 ,  一個程式就有好幾組基底和界限暫存器 ex: 程式段 資料段 堆疊段...  設定說不可以修改程式段的東西 可以用分段的機制限制這樣的事情![image-20220415131220634](./image/image-20220415131220634.png)
 * 分頁表 IR(指令) 會有兩個位置 p頁代碼,d位移代碼 兩個合起來才是真正的位移  頁代碼會指向方頁表 位移代碼會加上去 得到真正的記憶體位置 而分頁表上面會有TLB 去對映邏輯頁如何對應到實體頁 如果TLB命中就可以直接取得  而因為TLB是放在硬體的快取記憶體 速度快 如果TLB沒有命中 他會去 分頁表裡面找 (分頁表也是放在記憶體裡面 所以速度比較慢 => 如果每次都去分頁表找 速度變慢 所以才需要TLB 像是快取那樣)
 
-![image-20220415131536989](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415131536989.png)
+![image-20220415131536989](./image/image-20220415131536989.png)
 
 
 
@@ -293,7 +293,7 @@ MMU:
 
 Linux 系統架構
 
-![image-20220415133929812](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415133929812.png)
+![image-20220415133929812](./image/image-20220415133929812.png)
 
 VFS 虛擬檔案介面
 
@@ -435,7 +435,7 @@ Linux 記憶體管理
 
 分段式分頁
 
-![image-20220415134410694](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415134410694.png)
+![image-20220415134410694](./image/image-20220415134410694.png)
 
 比較有效的記憶體分配架構 : buddy system
 
@@ -443,4 +443,4 @@ Linux 記憶體管理
 
 
 
-![image-20220415134616181](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220415134616181.png)
+![image-20220415134616181](./image/image-20220415134616181.png)

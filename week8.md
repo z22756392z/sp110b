@@ -21,7 +21,7 @@ int main() {
 
 ```
 
-![image-20220504142207703](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220504142207703.png)
+![image-20220504142207703](./image/image-20220504142207703.png)
 
 ```c
 #include <stdio.h>
@@ -43,7 +43,7 @@ int main() {
 
 ```
 
-![image-20220504142652430](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220504142652430.png)
+![image-20220504142652430](./image/image-20220504142652430.png)
 
 #### **application : log**
 

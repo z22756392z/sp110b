@@ -124,12 +124,12 @@ int main(int argc, char * argv[]) {
 
 因為會導致同樣的程式碼 有不一樣的結果
 
-![image-20220302153250426](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220302153250426.png)
+![image-20220302153250426](./image/image-20220302153250426.png)
 
 
 
 .bss 是 **ex**:創一個int陣列但沒有初始化 而那個陣列放的位置
 
-![image-20220302154150688](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220302154150688.png)
+![image-20220302154150688](./image/image-20220302154150688.png)
 
-![image-20220302154333792](C:\Users\z22756392z\AppData\Roaming\Typora\typora-user-images\image-20220302154333792.png)
+![image-20220302154333792](./image/image-20220302154333792.png)
